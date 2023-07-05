@@ -1,0 +1,89 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 62.5%;
+  background-image: url("./assets/background-img.jpg");
+  height: 100vh;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.nav {
+  width: 100%;
+  background-color: #ff9b9b;
+
+  --icon1: scale(1);
+  --icon2: scale(0);
+}
+.nav:has(.dropdown:target) {
+  --icon1: scale(0);
+  --icon2: scale(1);
+  --clip: inset(0 0 0 0);
+}
+.nav__container {
+  display: grid;
+  grid-template-columns: max-content max-content;
+  grid-template-areas: "logo menu";
+  justify-content: space-between;
+  align-items: center;
+
+  width: 90%;
+  height: 60px;
+  margin: 0 auto;
+
+  overflow: hidden;
+}
+.nav__logo {
+  grid-area: logo;
+  font-size: 1.6em;
+  color: #fff;
+}
+
+.nav__menu {
+  position: relative;
+  grid-area: menu;
+  z-index: 2;
+  transform: var(--icon1);
+}
+.nav__menu--second {
+  transform: var(--icon2);
+}
+.nav__icon {
+  display: block;
+  width: 30px;
+}
+.dropdown {
+  position: absolute;
+  display: grid;
+  align-content: center;
+  gap: 2em;
+  background-color: #ffdede;
+  width: 80%;
+  max-width: 300px;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  padding: 1em;
+  clip-path: var(--clip, inset(0 0 100% 100%));
+  transition: clip, 0.6s;
+  overflow-y: auto;
+}
+.dropdown__list {
+  list-style: none;
+}
+.dropdown__link {
+  display: flex;
+  align-items: center;
+  gap: 6em;
+  text-decoration: none;
+  color: #3aa6b9;
+  font-size: 1.8em;
+}

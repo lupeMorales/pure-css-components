@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Drop-down menu</title>
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="nav__container">
+        <h1 class="nav__logo">wave SURF SHOP</h1>
+        <a href="#menu" class="nav__menu"
+          ><img src="./assets/menu.svg" alt="" class="nav__icon"
+        /></a>
+        <a href="" class="nav__menu nav__menu--second"
+          ><img src="./assets/close.svg" alt="" class="nav__icon"
+        /></a>
+
+        <ul class="dropdown" id="menu">
+          <li class="dropdown__list">
+            <a href="#" class="dropdown__link">
+              <img src="./assets/home.svg" alt="" class="dropdown__icon" />
+              <span class="dropdown__span">Home</span>
+            </a>
+          </li>
+          <li class="dropdown__list">
+            <a href="#" class="dropdown__link">
+              <img src="./assets/basket.svg" alt="" class="dropdown__icon" />
+              <span class="dropdown__span">Products</span>
+            </a>
+          </li>
+          <li class="dropdown__list">
+            <a href="#" class="dropdown__link">
+              <img src="./assets/envelope.svg" alt="" class="dropdown__icon" />
+              <span class="dropdown__span">Contact</span>
+            </a>
+          </li>
+          <li class="dropdown__list">
+            <a href="#" class="dropdown__link">
+              <img src="./assets/help.svg" alt="" class="dropdown__icon" />
+              <span class="dropdown__span">FAQ</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <main class="main"></main>
+  </body>
+</html>
