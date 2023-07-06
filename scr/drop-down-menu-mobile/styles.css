@@ -16,6 +16,7 @@ body {
   background-size: cover;
 }
 
+/* Nav bar */
 .nav {
   width: 100%;
   background-color: #ff9b9b;
@@ -60,18 +61,22 @@ body {
   display: block;
   width: 30px;
 }
+
+
+
+/* Dropdown menu */
 .dropdown {
   position: absolute;
   display: grid;
   align-content: center;
-  gap: 2em;
+  gap: 6em;
   background-color: #ffdede;
-  width: 80%;
+  width: 85%;
   max-width: 300px;
   top: 0;
   bottom: 0;
   right: 0;
-  padding: 1em;
+  padding: 0 2em ;
   clip-path: var(--clip, inset(0 0 100% 100%));
   transition: clip, 0.6s;
   overflow-y: auto;
@@ -79,11 +84,56 @@ body {
 .dropdown__list {
   list-style: none;
 }
+.dropdown__list:has(:checked){
+  --row: grid-template-rows: 1fr;
+  --rotate: rotate(180deg);
+  --bg:  #ff9b9b;
+}
 .dropdown__link {
+  position: relative;
   display: flex;
   align-items: center;
-  gap: 6em;
+  gap: 1.5em;
+padding: 10px;
+  font-size: 1.8em;
+  text-decoration: none;
+  border-radius: 6px;
+  color: #3aa6b9;
+  background-color: var(--bg, transparent);
+}
+
+.dropdown__check {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  right: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+.dropdown__content {
+  display: grid;
+  grid-template-rows: var(--row, 0fr);
+  transition: .3s grid-template-rows;
+
+}
+.dropdown__sub {
+  overflow: hidden;
+}
+
+.dropdown__li {
+  width: 85%;
+  list-style: none;
+  margin-left: auto;
+}
+.dropdown__arrow {
+  margin-left: auto;
+  transform: var(--rotate, 0);
+  transition: .5s transform;
+}
+.anchor {
+  display: block;
+  padding: 1em 0;
+  font-size: 1.5em;
   text-decoration: none;
   color: #3aa6b9;
-  font-size: 1.8em;
 }
