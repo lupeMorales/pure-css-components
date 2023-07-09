@@ -11,9 +11,9 @@ En este repositorio encontrarás componentes creado unicamente con Html y CSS. S
 ## Componentes
 
   - [Drop-down menu mobile](#) 
-  ![Drop-down menu mobile](./scr/assets/drop-down-mobile.png)
+  <!-- ![Drop-down menu mobile|10](./scr/assets/drop-down-mobile.png) -->
   - [Accordion-FAQ](https://codepen.io/lupeMorales/pen/gOQGvQz) 
-  ![Accordion FAQ](./scr/assets/accordion-FAQ.png)
+<!--   ![Accordion FAQ](./scr/assets/accordion-FAQ.png) -->
 
 
 
