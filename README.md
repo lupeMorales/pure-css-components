@@ -10,14 +10,16 @@ En este repositorio encontrarás componentes creado unicamente con Html y CSS. S
 
 ## Componentes
 
-  - [Drop-down menu](#words-counter) 
-  - [Accordion-FAQ](#tip-calculator-app) 
+  - [Drop-down menu mobile](#) 
+  ![Drop-down menu mobile](./scr/assets/drop-down-mobile.png)
+  - [Accordion-FAQ](https://codepen.io/lupeMorales/pen/gOQGvQz) 
+  ![Accordion FAQ](./scr/assets/accordion-FAQ.png)
 
 
 
 ## Contacto
 
-- Website - Visita mi[portfolio web](https://lupemorales.github.io/portfolio/)
+- Website - Visita mi [portfolio web](https://lupemorales.github.io/portfolio/)
 - Linkedin - [@LupeMorales](https://www.linkedin.com/in/lupe-morales/)
 
 **Let´s have fun coding!** 🚀
