@@ -1,5 +1,5 @@
 # pure-css-components
-![Logo](./scr/assets/img.png)
+![Logo|10](./scr/assets/img.png)
 
 
 ## Welcome! 👋
