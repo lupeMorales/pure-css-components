@@ -1,5 +1,6 @@
 # pure-css-components
-![Logo|10](./scr/assets/img.png)
+![Logo](./scr/assets/img.png)
+img[alt=Logo] { width: 100px; }
 
 
 ## Welcome! 👋
